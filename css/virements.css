@@ -1,0 +1,112 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.logout-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Formulaire de virement */
+.transfer-form .form-group {
+    margin-bottom: 15px;
+}
+
+.transfer-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.transfer-form input,
+.transfer-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.transfer-form button {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.transfer-form button:hover {
+    background-color: #31b0d5;
+}
+
+/* Barre de chargement */
+.loading-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.loading-bar::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #5bc0de;
+    animation: loading 3s infinite;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+#loading-message {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Masquer les boutons une fois que le chargement commence */
+.hidden {
+    display: none;
+}

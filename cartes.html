@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes - Banque XYZ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- En-tête avec le logo et le menu de navigation -->
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Banque XYZ</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="banque.html">Banque</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="comptes.html">Comptes</a></li>
+                    <li><a href="emprunter.html">Emprunter</a></li>
+                    <li><a href="investir.html">Investir</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="pourquoi-nous.html">Pourquoi nous</a></li>
+                    <li><a href="virement.html">Virement</a></li>
+                    <li><a href="proteger.html">Protéger</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Contenu principal avec les informations sur les cartes -->
+    <main>
+        <section class="cards-section">
+            <h2>Nos Cartes</h2>
+            <p>Découvrez nos différentes cartes.</p>
+
+            <!-- Carte de Crédit avec illustration et diagramme -->
+            <div class="card-item">
+                <div class="card-image">
+                    <img src="images/carte-credit.png" alt="Carte de Crédit">
+                </div>
+                <div class="card-details">
+                    <h3>Carte de Crédit</h3>
+                    <p>Carte avec avantages exclusifs.</p>
+                    <button class="btn-info">En savoir plus</button>
+                </div>
+                <canvas id="creditChart"></canvas>
+            </div>
+
+            <!-- Carte de Débit avec illustration et diagramme -->
+            <div class="card-item">
+                <div class="card-image">
+                    <img src="images/carte-debit.png" alt="Carte de Débit">
+                </div>
+                <div class="card-details">
+                    <h3>Carte de Débit</h3>
+                    <p>Carte pratique pour les achats quotidiens.</p>
+                    <button class="btn-info">En savoir plus</button>
+                </div>
+                <canvas id="debitChart"></canvas>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scripts JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* En-tête */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 30px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #d9534f; /* Couleur de survol pour les liens de navigation */
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: #d9534f; /* Couleur du bouton de connexion */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #c9302c;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Bannière */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+.btn-banner {
+    background-color: #d9534f; /* Couleur du bouton dans la bannière */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-banner:hover {
+    background-color: #c9302c;
+}
+
+/* Sections de contenu */
+.content-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-item img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-info {
+    padding: 20px;
+    width: 50%;
+}
+
+.content-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.btn {
+    background-color: #d9534f; /* Couleur des boutons dans les sections de contenu */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles Responsives */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .content-item {
+        flex-direction: column;
+    }
+
+    .content-item img, .content-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 1.8em;
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+}

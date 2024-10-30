@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #9E9E9E;
+}
+
+header {
+    background-color: #7CB342;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.menu-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.top-nav, .secondary-nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.top-nav ul, .secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav li, .secondary-nav li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.account-summary, .my-accounts, .upcoming-operations, .operation-distribution {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section section {
+    flex: 1;
+}
