@@ -1,9 +1,21 @@
-document.getElementById('virement-form').addEventListener('submit', function(event) {
+function submitVirement() {
+    // Empêcher le comportement par défaut de soumission du formulaire
     event.preventDefault();
-    
-    var amount = document.getElementById('amount').value;
-    var account = document.getElementById('account').value;
 
-    // Traitement du virement (exemple simplifié)
-    alert('Virement de ' + amount + ' EUR vers le compte ' + account + ' effectué avec succès.');
-});
+    // Afficher le message de chargement (facultatif)
+    document.getElementById('loading-container').style.display = 'block';
+
+    // Simuler une vérification du virement
+    setTimeout(function() {
+        // Cacher la barre de chargement
+        document.getElementById('loading-container').style.display = 'none';
+
+        // Afficher le message de succès
+        alert('Virement accepté');
+
+        // Vous pouvez également réinitialiser le formulaire ici si nécessaire
+        document.getElementById('virement-form').reset();
+    }, 2000); // Simuler un délai de traitement de 2 secondes
+
+    return false; // Retourner false pour éviter la soumission du formulaire
+}
