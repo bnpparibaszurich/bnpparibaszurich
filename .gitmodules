@@ -4,4 +4,4 @@
 
 [submodule "docs"]
     path = docs
-    url = https://github.com/bnpparibaszurich/bnpparibaszurich.git  # Remplacez par l'URL correcte si nécessaire
+    url = https://github.com/bnpparibaszurich/bnpparibaszurich.git
